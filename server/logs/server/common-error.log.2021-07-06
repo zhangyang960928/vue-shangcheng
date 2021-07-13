@@ -1,0 +1,240 @@
+2021-07-06 17:00:38,049 ERROR 16300 [-/127.0.0.1/-/3ms POST /v1/isCollection] nodejs.CastError: Cast to string failed for value "{ id: '24afea564e5248b5a2bc59da95f09911' }" (type Object) at path "cid" for model "Collection"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{ id: '24afea564e5248b5a2bc59da95f09911' }\""
+kind: "string"
+value: {"id":"24afea564e5248b5a2bc59da95f09911"}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-06 17:00:40,262 ERROR 16300 [-/127.0.0.1/-/1ms POST /v1/isCollection] nodejs.CastError: Cast to string failed for value "{ id: '24afea564e5248b5a2bc59da95f09911' }" (type Object) at path "cid" for model "Collection"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{ id: '24afea564e5248b5a2bc59da95f09911' }\""
+kind: "string"
+value: {"id":"24afea564e5248b5a2bc59da95f09911"}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-06 17:00:44,432 ERROR 16300 [-/127.0.0.1/-/1ms POST /v1/isCollection] nodejs.CastError: Cast to string failed for value "{ id: '24afea564e5248b5a2bc59da95f09911' }" (type Object) at path "cid" for model "Collection"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{ id: '24afea564e5248b5a2bc59da95f09911' }\""
+kind: "string"
+value: {"id":"24afea564e5248b5a2bc59da95f09911"}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-06 17:00:46,867 ERROR 16300 [-/127.0.0.1/-/1ms POST /v1/isCollection] nodejs.CastError: Cast to string failed for value "{ id: '24afea564e5248b5a2bc59da95f09911' }" (type Object) at path "cid" for model "Collection"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{ id: '24afea564e5248b5a2bc59da95f09911' }\""
+kind: "string"
+value: {"id":"24afea564e5248b5a2bc59da95f09911"}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-06 17:00:53,972 ERROR 16300 [-/127.0.0.1/-/1ms POST /v1/isCollection] nodejs.CastError: Cast to string failed for value "{}" (type Object) at path "cid" for model "Collection"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{}\""
+kind: "string"
+value: {}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-06 17:00:58,212 ERROR 16300 [-/127.0.0.1/-/1ms POST /v1/isCollection] nodejs.CastError: Cast to string failed for value "{ id: '24afea564e5248b5a2bc59da95f09911' }" (type Object) at path "cid" for model "Collection"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{ id: '24afea564e5248b5a2bc59da95f09911' }\""
+kind: "string"
+value: {"id":"24afea564e5248b5a2bc59da95f09911"}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-06 17:01:01,705 ERROR 16300 [-/127.0.0.1/-/1ms POST /v1/isCollection] nodejs.CastError: Cast to string failed for value "{ id: '24afea564e5248b5a2bc59da95f09911' }" (type Object) at path "cid" for model "Collection"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{ id: '24afea564e5248b5a2bc59da95f09911' }\""
+kind: "string"
+value: {"id":"24afea564e5248b5a2bc59da95f09911"}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-06 17:01:18,073 ERROR 16300 [-/127.0.0.1/-/1ms POST /v1/isCollection] nodejs.CastError: Cast to string failed for value "{ id: '24afea564e5248b5a2bc59da95f09911' }" (type Object) at path "cid" for model "Collection"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{ id: '24afea564e5248b5a2bc59da95f09911' }\""
+kind: "string"
+value: {"id":"24afea564e5248b5a2bc59da95f09911"}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-06 17:01:19,534 ERROR 16300 [-/127.0.0.1/-/1ms POST /v1/isCollection] nodejs.CastError: Cast to string failed for value "{ id: '24afea564e5248b5a2bc59da95f09911' }" (type Object) at path "cid" for model "Collection"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{ id: '24afea564e5248b5a2bc59da95f09911' }\""
+kind: "string"
+value: {"id":"24afea564e5248b5a2bc59da95f09911"}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-06 17:01:24,115 ERROR 16300 [-/127.0.0.1/-/1ms POST /v1/isCollection] nodejs.CastError: Cast to string failed for value "{ id: '24afea564e5248b5a2bc59da95f09911' }" (type Object) at path "cid" for model "Collection"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{ id: '24afea564e5248b5a2bc59da95f09911' }\""
+kind: "string"
+value: {"id":"24afea564e5248b5a2bc59da95f09911"}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-06 17:01:27,350 ERROR 16300 [-/127.0.0.1/-/1ms POST /v1/isCollection] nodejs.CastError: Cast to string failed for value "{}" (type Object) at path "cid" for model "Collection"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{}\""
+kind: "string"
+value: {}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-06 17:01:34,378 ERROR 16300 [-/127.0.0.1/-/1ms POST /v1/isCollection] nodejs.CastError: Cast to string failed for value "{}" (type Object) at path "cid" for model "Collection"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{}\""
+kind: "string"
+value: {}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-06 22:16:13,068 ERROR 16300 [-/127.0.0.1/-/3ms POST /v1/deleteShop] nodejs.CastError: Cast to string failed for value "{}" (type Object) at path "cid" for model "ShopList"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{}\""
+kind: "string"
+value: {}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-06 22:16:55,686 ERROR 16300 [-/127.0.0.1/-/1ms POST /v1/deleteShop] nodejs.CastError: Cast to string failed for value "{}" (type Object) at path "cid" for model "ShopList"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{}\""
+kind: "string"
+value: {}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-06 22:20:50,574 ERROR 16300 [-/127.0.0.1/-/3ms POST /v1/deleteShop] nodejs.CastError: Cast to string failed for value "{ id: [ '24afea564e5248b5a2bc59da95f09911' ] }" (type Object) at path "cid" for model "ShopList"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{ id: [ '24afea564e5248b5a2bc59da95f09911' ] }\""
+kind: "string"
+value: {"id":["24afea564e5248b5a2bc59da95f09911"]}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-06 22:21:45,712 ERROR 16300 [-/127.0.0.1/-/1ms POST /v1/deleteShop] nodejs.CastError: Cast to string failed for value "{}" (type Object) at path "cid" for model "ShopList"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{}\""
+kind: "string"
+value: {}
+path: "cid"
+reason: null
+valueType: "Object"
+pid: 16300
+hostname: LAPTOP-V9VBPT3H
+

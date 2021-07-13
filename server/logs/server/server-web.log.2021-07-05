@@ -1,0 +1,45 @@
+2021-07-05 17:53:51,897 ERROR 17360 [-/127.0.0.1/-/26ms POST /v1/search] nodejs.CastError: Cast to string failed for value "{ value: '水果' }" (type Object) at path "name" for model "Goods"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{ value: '水果' }\""
+kind: "string"
+value: {"value":"水果"}
+path: "name"
+reason: null
+valueType: "Object"
+pid: 17360
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-05 17:53:59,805 ERROR 17360 [-/127.0.0.1/-/2ms POST /v1/search] nodejs.CastError: Cast to string failed for value "{ value: '水' }" (type Object) at path "name" for model "Goods"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{ value: '水' }\""
+kind: "string"
+value: {"value":"水"}
+path: "name"
+reason: null
+valueType: "Object"
+pid: 17360
+hostname: LAPTOP-V9VBPT3H
+
+2021-07-05 17:54:00,039 ERROR 17360 [-/127.0.0.1/-/1ms POST /v1/search] nodejs.CastError: Cast to string failed for value "{ value: '' }" (type Object) at path "name" for model "Goods"
+    at model.Query.exec (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\张杨\Desktop\shangcheng\server\node_modules\_mongoose@5.13.0@mongoose\lib\query.js:4592:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+messageFormat: undefined
+stringValue: "\"{ value: '' }\""
+kind: "string"
+value: {"value":""}
+path: "name"
+reason: null
+valueType: "Object"
+pid: 17360
+hostname: LAPTOP-V9VBPT3H
+

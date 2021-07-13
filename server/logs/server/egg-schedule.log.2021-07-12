@@ -1,0 +1,12 @@
+2021-07-12 16:42:14,488 INFO 18596 [egg-schedule]: register schedule C:\Users\张杨\Desktop\shangcheng\server\node_modules\_egg-multipart@2.12.0@egg-multipart\app\schedule\clean_tmpdir.js
+2021-07-12 16:42:14,488 INFO 18596 [egg-schedule]: register schedule C:\Users\张杨\Desktop\shangcheng\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2021-07-12 16:42:14,488 INFO 18596 [egg-schedule]: register schedule C:\Users\张杨\Desktop\shangcheng\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2021-07-12 16:42:16,152 INFO 15712 [Timer] C:\Users\张杨\Desktop\shangcheng\server\node_modules\_egg-multipart@2.12.0@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 42463857ms at 2021-07-13 04:30:00.009
+2021-07-12 16:42:16,153 INFO 15712 [Timer] C:\Users\张杨\Desktop\shangcheng\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 26263847ms at 2021-07-13 00:00:00.000
+2021-07-12 16:42:16,153 INFO 15712 [Timer] C:\Users\张杨\Desktop\shangcheng\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 26264847ms at 2021-07-13 00:00:01.000
+2021-07-13 00:00:00,641 INFO 15712 [Timer] C:\Users\张杨\Desktop\shangcheng\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 86399405ms at 2021-07-14 00:00:00.045
+2021-07-13 00:00:01,012 INFO 18596 [Job#16261632004759662371155505001] C:\Users\张杨\Desktop\shangcheng\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js executing by app
+2021-07-13 00:00:01,038 INFO 18596 [Job#16261632010139662376504517001] C:\Users\张杨\Desktop\shangcheng\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js executing by app
+2021-07-13 00:00:01,100 INFO 18596 [Job#16261632004759662371155505001] C:\Users\张杨\Desktop\shangcheng\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js execute succeed, used 85ms. 
+2021-07-13 00:00:01,112 INFO 18596 [Job#16261632010139662376504517001] C:\Users\张杨\Desktop\shangcheng\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js execute succeed, used 74ms. 
+2021-07-13 00:00:01,027 INFO 15712 [Timer] C:\Users\张杨\Desktop\shangcheng\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 86399975ms at 2021-07-14 00:00:01.002

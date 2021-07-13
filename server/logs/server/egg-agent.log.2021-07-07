@@ -1,0 +1,11 @@
+2021-07-07 00:00:01,029 INFO 19296 [egg-logrotator] agent logger reload: got log-reload message
+2021-07-07 16:37:40,723 INFO 15892 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\张杨\\Desktop\\shangcheng\\server\\logs\\server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-07-07 16:37:40,733 INFO 15892 [egg:core] dump config after load, 6ms
+2021-07-07 16:37:40,793 INFO 15892 [egg-watcher] Start watching: ["C:\\Users\\张杨\\Desktop\\shangcheng\\server\\app","C:\\Users\\张杨\\Desktop\\shangcheng\\server\\config","C:\\Users\\张杨\\Desktop\\shangcheng\\server\\mocks","C:\\Users\\张杨\\Desktop\\shangcheng\\server\\mocks_proxy","C:\\Users\\张杨\\Desktop\\shangcheng\\server\\app.js"]
+2021-07-07 16:37:40,793 INFO 15892 [egg-watcher] Start watching: "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\app"
+2021-07-07 16:37:40,794 INFO 15892 [egg-watcher] Start watching: "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\config"
+2021-07-07 16:37:40,794 INFO 15892 [egg-watcher] Start watching: "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\mocks"
+2021-07-07 16:37:40,794 INFO 15892 [egg-watcher] Start watching: "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\mocks_proxy"
+2021-07-07 16:37:40,795 INFO 15892 [egg-watcher] Start watching: "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\app.js"
+2021-07-07 16:37:40,795 INFO 15892 [egg-watcher:agent] watcher start success
+2021-07-07 16:37:40,851 INFO 15892 [egg:core] dump config after ready, 46ms

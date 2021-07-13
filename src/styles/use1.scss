@@ -1,0 +1,40 @@
+.wordColor {
+  .van-index-bar__sidebar {
+    color: #10b8d0 !important;
+    margin-top: 35px;
+  }
+  .van-index-bar__index {
+    font-size: 16px;
+    height: 20px;
+  }
+}
+.font{
+  .van-tab__text{
+    font-size: 16px;
+  }
+}
+.potation{
+  .van-tabs__wrap{
+    position: fixed !important;
+    margin-top: -1px;
+  }
+}
+.mycomment_potation{
+  .van-tabs__wrap{
+    position: absolute;
+    top:-20px;
+    left:20px;
+    width: 345px;
+    height: 60px !important;
+    box-shadow: 0 0 10px #eeeeee;
+    border-radius: 5px;
+  }
+  .van-tab{
+    font-size: 18px !important;
+  }
+}
+.font{
+  .van-field__label{
+    width: 70px !important;
+  }
+}

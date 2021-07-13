@@ -1,0 +1,21 @@
+2021-07-09 00:00:02,066 INFO 11076 [egg-logrotator] app logger reload: got log-reload message
+2021-07-10 22:36:34,971 INFO 15392 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\张杨\\Desktop\\shangcheng\\server\\logs\\server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-07-10 22:36:35,007 INFO 15392 [egg-multipart] stream mode enable
+2021-07-10 22:36:35,616 INFO 15392 [egg-mongoose] connecting mongodb://127.0.0.1/shoppingMall
+2021-07-10 22:36:36,126 INFO 15392 [egg-static] starting static serve /public/ -> C:\Users\张杨\Desktop\shangcheng\server\app\public
+2021-07-10 22:36:36,130 INFO 15392 [egg-security] use methodnoallow middleware
+2021-07-10 22:36:36,131 INFO 15392 [egg-security] use noopen middleware
+2021-07-10 22:36:36,133 INFO 15392 [egg-security] use nosniff middleware
+2021-07-10 22:36:36,134 INFO 15392 [egg-security] use xssProtection middleware
+2021-07-10 22:36:36,135 INFO 15392 [egg-security] use xframe middleware
+2021-07-10 22:36:36,136 INFO 15392 [egg-security] use dta middleware
+2021-07-10 22:36:36,136 INFO 15392 [egg-security] compose 6 middlewares into one security middleware
+2021-07-10 22:36:36,175 INFO 15392 [egg:core] dump config after load, 16ms
+2021-07-10 22:36:36,199 INFO 15392 [egg-mongoose] starting...
+2021-07-10 22:36:36,282 INFO 15392 [egg-mongoose] mongodb://127.0.0.1/shoppingMall connected successfully
+2021-07-10 22:36:36,293 INFO 15392 [egg-mongoose] instance[0] start successfully
+2021-07-10 22:36:36,297 INFO 15392 [egg-watcher:application] watcher start success
+2021-07-10 22:36:36,316 INFO 15392 [egg:core] dump config after ready, 14ms
+2021-07-11 00:00:01,368 INFO 15392 [egg-logrotator] clean all log before 31 days
+2021-07-11 00:00:02,356 INFO 15392 [egg-logrotator] broadcast log-reload
+2021-07-11 00:00:02,357 INFO 15392 [egg-logrotator] rotate files success by DayRotator, files ["C:\\Users\\张杨\\Desktop\\shangcheng\\server\\logs\\server\\common-error.log -> C:\\Users\\张杨\\Desktop\\shangcheng\\server\\logs\\server\\common-error.log.2021-07-10","C:\\Users\\张杨\\Desktop\\shangcheng\\server\\logs\\server\\server-web.log -> C:\\Users\\张杨\\Desktop\\shangcheng\\server\\logs\\server\\server-web.log.2021-07-10","C:\\Users\\张杨\\Desktop\\shangcheng\\server\\logs\\server\\egg-web.log -> C:\\Users\\张杨\\Desktop\\shangcheng\\server\\logs\\server\\egg-web.log.2021-07-10","C:\\Users\\张杨\\Desktop\\shangcheng\\server\\logs\\server\\egg-schedule.log -> C:\\Users\\张杨\\Desktop\\shangcheng\\server\\logs\\server\\egg-schedule.log.2021-07-10","C:\\Users\\张杨\\Desktop\\shangcheng\\server\\logs\\server\\egg-agent.log -> C:\\Users\\张杨\\Desktop\\shangcheng\\server\\logs\\server\\egg-agent.log.2021-07-10"]
