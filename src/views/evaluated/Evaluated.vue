@@ -24,7 +24,8 @@
             <img :src="user.avatar" alt="" />
           </div>
           <div class="namer">
-            <div class="namerOne">{{ user.nickname }}</div>
+            <div v-if="list.anonymous===false"><div class="namerOne">{{ user.nickname }}</div></div>
+            <div v-else><div class="namerOne">匿名人士</div></div>
             <div><van-rate v-model="list.rate" /></div>
           </div>
           <div>{{ list.comment_time }}</div>

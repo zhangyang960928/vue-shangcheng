@@ -151,7 +151,13 @@ export default {
       return this.$store.state.user;
     },
     shopping() {
-      return this.$store.state.shopList;
+      if(localStorage.getItem('user')){
+        if(this.$store.state.shopList <= 0){
+          return ''
+        }else{
+          return this.$store.state.shopList;
+        }
+      }
     },
   },
   watch: {},

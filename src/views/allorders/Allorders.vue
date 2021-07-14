@@ -37,7 +37,7 @@
         <!-- 底部 -->
         <div class="word3 displayF flex-directionC align-itemsE">
             <div>创建时间：{{item.add_time}}</div>
-            <div>收货地址：{{item.address}}</div>
+            <div style="text-align:right">收货地址：{{item.address}}</div>
             <div>共：{{item.order_list.length}}件商品 合计：{{Number(item.mallPrice).toFixed(2)}}</div>
           </div>
       </div>

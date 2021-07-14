@@ -119,26 +119,33 @@ export default {
         return item.cid;
       });
       console.log(list3);
-      this.$api
-        .deleteShop(list3)
-        .then((res) => {
-          // console.log(res);
-          this.$toast("删除成功");
+      this.$dialog.confirm({
+        title: "删除商品",
+        message: "您确定删除商品吗",
+      })
+        .then(() => {
           this.$api
-            .getCard()
+            .deleteShop(list3)
             .then((res) => {
-              console.log(res);
-              this.list = res.shopList;
-              localStorage.setItem("shopList", res.shopList.length);
-              this.$store.commit("changeshopping", res.shopList.length);
+              // console.log(res);
+              this.$toast("删除成功");
+              this.$api
+                .getCard()
+                .then((res) => {
+                  console.log(res);
+                  this.list = res.shopList;
+                  localStorage.setItem("shopList", res.shopList.length);
+                  this.$store.commit("changeshopping", res.shopList.length);
+                })
+                .catch((err) => {
+                  console.log("请求失败", err);
+                });
             })
             .catch((err) => {
               console.log("请求失败", err);
             });
         })
-        .catch((err) => {
-          console.log("请求失败", err);
-        });
+        .catch(() => {});
     },
     // 加减
     remove(count, cid, mallPrice) {
@@ -162,7 +169,7 @@ export default {
         return item.check === true;
       });
       // console.log(list4);
-      localStorage.setItem('idDirect',0)
+      localStorage.setItem("idDirect", 0);
       localStorage.setItem("list4", JSON.stringify(list4));
       this.$router.push("/settlement");
     },

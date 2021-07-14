@@ -2,7 +2,7 @@
   <div class="home">
     <div class="homeone displayF">
       <div class="left displayF justify-contentC align-itemsC" @click="map">
-        {{ citys? citys :'定位中' }}
+        {{ citys ? citys : "定位中" }}
         <van-icon name="arrow-down" />
       </div>
       <div class="right displayF align-itemsC">
@@ -13,7 +13,7 @@
           @focus="focus"
         >
           <template #action>
-            <div v-if="show" @click="cancel" style="font-size:16px">取消</div>
+            <div v-if="show" @click="cancel" style="font-size: 16px">取消</div>
           </template>
         </van-search>
       </div>
@@ -56,11 +56,13 @@
       </div>
       <div v-else>
         <div class="cancel displayF justify-contentE">
-          <div class="cancel1" @click="cancel1">清空</div>
+          <div class="cancel1" @click="cancel1">
+            <van-icon name="delete-o" />
+          </div>
         </div>
         <div class="exhibition displayF">
-          <div class="entry" v-for="(item,index) in searchlist" :key='index'>
-            {{item.name}}
+          <div class="entry" v-for="(item, index) in searchlist" :key="index">
+            {{ item.name }}
           </div>
         </div>
       </div>
@@ -93,15 +95,15 @@ export default {
       list6: null,
       flag: true,
       city: "",
-      value:'',
-      listone:[],
-      searchlist:[],
-      show:false,
+      value: "",
+      listone: [],
+      searchlist: [],
+      show: false,
     };
   },
-  components: {  Hometwo, Homethree, Homefour, Homefive, Homesix },
+  components: { Hometwo, Homethree, Homefour, Homefive, Homesix },
   methods: {
-     getLocation() {
+    getLocation() {
       let _this = this;
       AMap.plugin("AMap.Geolocation", function () {
         var geolocation = new AMap.Geolocation({
@@ -126,8 +128,8 @@ export default {
           console.log(data);
           this.city = data.addressComponent.city;
           _this.city = this.city;
-          _this.$store.commit('changeCity', this.city);
-          localStorage.setItem('city',this.city)
+          _this.$store.commit("changeCity", this.city);
+          localStorage.setItem("city", this.city);
           console.log(this.city);
         }
 
@@ -136,12 +138,18 @@ export default {
         }
       });
     },
-    map(){
-      this.$router.push('/map')
+    map() {
+      this.$router.push("/map");
     },
     // 点击存储
     saveSearch(item) {
-      this.$utils.saveHistory({ key: "search", data: this.value, attr: "name" });
+      if (this.user) {
+        this.$utils.saveHistory({
+          key: `${this.user.username}search`,
+          data: this.value,
+          attr: "name",
+        });
+      }
       this.$router.push({
         path: "/details",
         query: {
@@ -150,23 +158,27 @@ export default {
       });
     },
     // 获取焦点
-    focus(){
-      this.flag=false
-      this.show=true
+    focus() {
+      this.flag = false;
+      this.show = true;
     },
     // 取消
-    cancel(){
-      this.flag=true
-      this.show=false
+    cancel() {
+      this.flag = true;
+      this.show = false;
+      this.value = "";
     },
     // 清空
-    cancel1(){
-      localStorage.removeItem('searchHistory')
-      this.searchlist=[]
-    }
+    cancel1() {
+      if (this.user) {
+        localStorage.removeItem(`${this.user.username}searchHistory`);
+        this.searchlist = [];
+      }
+    },
   },
   mounted() {
-    if(!this.citys){
+    // console.log(this.user);
+    if (!this.citys) {
       this.getLocation();
     }
     this.$api
@@ -193,28 +205,41 @@ export default {
       .catch((err) => {
         console.log("请求失败", err);
       });
-      this.searchlist=this.$utils.getHistory({key:'search'})
+    if (this.user) {
+      this.searchlist = this.$utils.getHistory({
+        key: `${this.user.username}search`,
+      });
+    }
   },
   computed: {
-     citys(){
-      return this.$store.state.city
-    }
+    citys() {
+      return this.$store.state.city;
+    },
+    user() {
+      return JSON.parse(this.$store.state.user);
+    },
   },
   watch: {
-    value(val){
-      this.$api.search({
-        value:val
-      }).then((res)=>{
-        // console.log(res.data.list);
-        this.listone=res.data.list
-        this.listone.map((item)=>{
-          item.name=item.name.replace(val,`<span style='color:red'>${val}</span>`)
+    value(val) {
+      this.$api
+        .search({
+          value: val,
         })
-        // console.log(this.listone);
-      }).catch(err=>{
-        console.log('请求失败');
-      })
-    }
+        .then((res) => {
+          // console.log(res.data.list);
+          this.listone = res.data.list;
+          this.listone.map((item) => {
+            item.name = item.name.replace(
+              val,
+              `<span style='color:red'>${val}</span>`
+            );
+          });
+          // console.log(this.listone);
+        })
+        .catch((err) => {
+          console.log("请求失败");
+        });
+    },
   },
 };
 </script>
@@ -278,22 +303,23 @@ export default {
   border-radius: 4px;
   width: 240px;
 }
-.cancel{
+.cancel {
   padding-right: 20px;
-  background:  #f2f2f2;
+  background: #f2f2f2;
 }
-.exhibition{
+.exhibition {
   background: white;
-  padding:10px 20px;
+  padding: 10px 20px;
   flex-wrap: wrap;
 }
-.entry{
+.entry {
   padding: 5px;
-  background:  #f2f2f2;
+  background: #f2f2f2;
   border-radius: 10px;
   margin-right: 10px;
 }
-.cancel1{
+.cancel1 {
   padding: 10px;
+  font-size: 20px;
 }
 </style>

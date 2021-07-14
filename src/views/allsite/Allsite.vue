@@ -66,7 +66,11 @@ export default {
   methods: {
     // 返回
     remove() {      
-        this.$router.back();
+        if (Number(localStorage.getItem("allSite"))===0) {
+        this.$router.push("/settlement");
+      }else{
+        this.$router.push("/me");
+      }
     },
     // 跳转新增
     onAdd() {

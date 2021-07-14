@@ -80,28 +80,28 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\lib\\onerror_page.mustache"
+      "templatePath": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\lib\\onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
       "dirs": [
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-session@3.3.0@egg-session\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-security@2.9.0@egg-security\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-schedule@3.6.6@egg-schedule\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-multipart@2.12.0@egg-multipart\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-development@2.7.0@egg-development\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-static@2.2.0@egg-static\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-view@2.1.3@egg-view\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-mongoose@3.3.1@egg-mongoose\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-view-ejs@2.0.1@egg-view-ejs\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-jwt@3.1.7@egg-jwt\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\locales",
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\config\\locales"
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg-session@3.3.0@egg-session\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg-security@2.9.0@egg-security\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg-schedule@3.6.6@egg-schedule\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg-multipart@2.13.0@egg-multipart\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg-development@2.7.0@egg-development\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg-static@2.2.0@egg-static\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg-view@2.1.3@egg-view\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg-mongoose@3.3.1@egg-mongoose\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg-view-ejs@2.0.1@egg-view-ejs\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg-jwt@3.1.7@egg-jwt\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\locales",
+        "D:\\项目\\shangcheng\\server\\config\\locales"
       ],
       "queryField": "locale",
       "cookieField": "locale",
@@ -112,8 +112,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\lib\\event-sources\\default",
-        "development": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\lib\\event-sources\\development"
+        "default": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\lib\\event-sources\\default",
+        "development": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\lib\\event-sources\\development"
       }
     },
     "customLogger": {
@@ -162,7 +162,7 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\app\\public",
+      "dir": "D:\\项目\\shangcheng\\server\\app\\public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
@@ -170,7 +170,7 @@
     },
     "view": {
       "root": [
-        "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\app\\view"
+        "D:\\项目\\shangcheng\\server\\app\\view"
       ],
       "cache": false,
       "defaultExtension": ".html",
@@ -195,7 +195,7 @@
       "open": "<Function open>"
     },
     "ejs": {
-      "root": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\app\\view",
+      "root": "D:\\项目\\shangcheng\\server\\app\\view",
       "cache": false,
       "debug": false,
       "compileDebug": true,
@@ -269,9 +269,9 @@
       "author": "",
       "license": "MIT"
     },
-    "baseDir": "C:\\Users\\张杨\\Desktop\\shangcheng\\server",
+    "baseDir": "D:\\项目\\shangcheng\\server",
     "HOME": "C:\\Users\\张杨",
-    "rundir": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\run",
+    "rundir": "D:\\项目\\shangcheng\\server\\run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -303,7 +303,7 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\logs\\server",
+      "dir": "D:\\项目\\shangcheng\\server\\logs\\server",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -404,8 +404,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-onerror@2.1.0@egg-onerror",
+      "from": "D:\\项目\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-onerror@2.1.0@egg-onerror",
       "version": "2.1.0"
     },
     "session": {
@@ -415,8 +415,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-session@3.3.0@egg-session",
+      "from": "D:\\项目\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-session@3.3.0@egg-session",
       "version": "3.3.0"
     },
     "i18n": {
@@ -426,8 +426,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-i18n@2.1.1@egg-i18n",
+      "from": "D:\\项目\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-i18n@2.1.1@egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -437,8 +437,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-watcher@3.1.1@egg-watcher",
+      "from": "D:\\项目\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-watcher@3.1.1@egg-watcher",
       "version": "3.1.1"
     },
     "multipart": {
@@ -450,9 +450,9 @@
         "schedule"
       ],
       "env": [],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-multipart@2.12.0@egg-multipart",
-      "version": "2.12.0"
+      "from": "D:\\项目\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-multipart@2.13.0@egg-multipart",
+      "version": "2.13.0"
     },
     "security": {
       "enable": true,
@@ -463,8 +463,8 @@
         "session"
       ],
       "env": [],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-security@2.9.0@egg-security",
+      "from": "D:\\项目\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-security@2.9.0@egg-security",
       "version": "2.9.0"
     },
     "development": {
@@ -478,8 +478,8 @@
       "env": [
         "local"
       ],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-development@2.7.0@egg-development",
+      "from": "D:\\项目\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-development@2.7.0@egg-development",
       "version": "2.7.0"
     },
     "logrotator": {
@@ -491,8 +491,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator",
+      "from": "D:\\项目\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator",
       "version": "3.1.0"
     },
     "schedule": {
@@ -502,8 +502,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-schedule@3.6.6@egg-schedule",
+      "from": "D:\\项目\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-schedule@3.6.6@egg-schedule",
       "version": "3.6.6"
     },
     "static": {
@@ -513,8 +513,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-static@2.2.0@egg-static",
+      "from": "D:\\项目\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-static@2.2.0@egg-static",
       "version": "2.2.0"
     },
     "jsonp": {
@@ -526,8 +526,8 @@
         "security"
       ],
       "env": [],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp",
+      "from": "D:\\项目\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp",
       "version": "2.0.0"
     },
     "view": {
@@ -537,8 +537,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-view@2.1.3@egg-view",
+      "from": "D:\\项目\\shangcheng\\server\\node_modules\\_egg@2.29.4@egg\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-view@2.1.3@egg-view",
       "version": "2.1.3"
     },
     "mongoose": {
@@ -548,8 +548,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-mongoose@3.3.1@egg-mongoose",
+      "from": "D:\\项目\\shangcheng\\server\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-mongoose@3.3.1@egg-mongoose",
       "version": "3.3.1"
     },
     "cors": {
@@ -559,8 +559,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-cors@2.2.3@egg-cors",
+      "from": "D:\\项目\\shangcheng\\server\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-cors@2.2.3@egg-cors",
       "version": "2.2.3"
     },
     "ejs": {
@@ -572,8 +572,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-view-ejs@2.0.1@egg-view-ejs",
+      "from": "D:\\项目\\shangcheng\\server\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-view-ejs@2.0.1@egg-view-ejs",
       "version": "2.0.1"
     },
     "jwt": {
@@ -585,8 +585,8 @@
         "onerror"
       ],
       "env": [],
-      "from": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\config\\plugin.js",
-      "path": "C:\\Users\\张杨\\Desktop\\shangcheng\\server\\node_modules\\_egg-jwt@3.1.7@egg-jwt",
+      "from": "D:\\项目\\shangcheng\\server\\config\\plugin.js",
+      "path": "D:\\项目\\shangcheng\\server\\node_modules\\_egg-jwt@3.1.7@egg-jwt",
       "version": "3.1.7"
     }
   }

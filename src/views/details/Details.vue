@@ -95,19 +95,25 @@ export default {
       .then((res) => {
         // console.log(res);
         this.list = res.goods.goodsOne;
-        this.$utils.saveHistory({
-          key: "browse",
+        if(this.user){
+          this.$utils.saveHistory({
+          key: `${this.user.username}browse`,
           data: this.list,
           attr: "id",
         });
+        }
         this.images.push(this.list.image);
-        console.log(this.list);
+        // console.log(this.list);
       })
       .catch((err) => {
         console.log("请求失败", err);
       });
   },
-  computed: {},
+  computed: {
+    user() {
+      return JSON.parse(this.$store.state.user);
+    },
+  },
   watch: {},
 };
 </script>

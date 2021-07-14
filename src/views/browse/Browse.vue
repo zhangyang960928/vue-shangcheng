@@ -51,7 +51,7 @@ export default {
     // 拿本地数据
     browseHistory() {
       this.list = this.$utils.getHistory({
-        key: "browse",
+        key: `${this.user.username}browse`,
       });
       // console.log(this.list);
     },
@@ -59,13 +59,19 @@ export default {
     cleanUp(item){
       this.list.splice(item,1)
       // console.log(this.list);
-      localStorage.setItem('browseHistory',JSON.stringify(this.list))
+      localStorage.setItem(`${this.user.username}browseHistory`,JSON.stringify(this.list))
     }
   },
   mounted() {
-    this.browseHistory();
+    if(this.user){
+       this.browseHistory();
+    }
   },
-  computed: {},
+  computed: {
+    user() {
+      return JSON.parse(this.$store.state.user);
+    },
+  },
   watch: {},
 };
 </script>

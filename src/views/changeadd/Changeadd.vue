@@ -49,7 +49,7 @@ export default {
   methods: {
     // 点击返回
     remove() {
-      this.$router.back();
+      this.$router.push('/allsite');
     },
     // 点击保存
     onSave(val) {
