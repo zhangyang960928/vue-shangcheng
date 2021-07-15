@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="box">
     <router-view></router-view>
     <van-tabbar active-color="#ee0a24" inactive-color="#000" class="foot" route>
       <van-tabbar-item icon="wap-home" to="/">商品</van-tabbar-item>
@@ -40,5 +40,8 @@ export default {
 <style lang='scss' scoped>
 .foot {
   height: 40px;
+}
+.box{
+  height: 100%;
 }
 </style>

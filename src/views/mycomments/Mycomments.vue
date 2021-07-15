@@ -22,7 +22,7 @@
     <div class="mycomment">
       <van-tabs class="mycomment_potation" sticky>
         <van-tab title="待评价">
-          <van-pull-refresh v-model="refreshing">
+          <van-pull-refresh v-model="refreshing" disabled>
             <van-list
               v-model="loading"
               :finished="finished"
@@ -54,7 +54,7 @@
           </van-pull-refresh>
         </van-tab>
         <van-tab title="已评价">
-          <van-pull-refresh v-model="refreshing">
+          <van-pull-refresh v-model="refreshing" disabled>
             <van-list
               v-model="loading"
               :finished="finished"

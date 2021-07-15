@@ -8,7 +8,10 @@
     </child>
     <!-- 登录栏 -->
     <div class="portrait">
-      <div class="first displayF justify-contentE" @click="checkLogin('/profile')">
+      <div
+        class="first displayF justify-contentE"
+        @click="checkLogin('/profile')"
+      >
         <van-icon name="setting-o" />
       </div>
       <div v-if="user">
@@ -35,45 +38,55 @@
     <div class="sort displayF align-itemsC">
       <div
         class="sortOne displayF flex-directionC justify-contentC align-itemsC"
+        @click="checkLogin('/completed', 1)"
       >
         <van-icon name="balance-pay" class="photo" />
         <div class="word">待付款</div>
       </div>
       <div
         class="sortOne displayF flex-directionC justify-contentC align-itemsC"
+        @click="checkLogin('/completed', 2)"
       >
         <van-icon name="free-postage" class="photo" />
         <div class="word">待发货</div>
       </div>
       <div
         class="sortOne displayF flex-directionC justify-contentC align-itemsC"
+        @click="checkLogin('/completed', 3)"
       >
         <van-icon name="points" class="photo" />
         <div class="word">待收货</div>
       </div>
       <div
-        class="sortOne displayF flex-directionC justify-contentC align-itemsC" @click="checkLogin('/mycomments')"
+        class="sortOne displayF flex-directionC justify-contentC align-itemsC"
+        @click="checkLogin('/mycomments')"
       >
         <van-icon name="good-job-o" class="photo" />
         <div class="word">评价</div>
       </div>
       <div
         class="sortOne displayF flex-directionC justify-contentC align-itemsC"
-        @click="checkLogin('/completed')"
+        @click="checkLogin('/completed', 4)"
       >
         <van-icon name="like-o" class="photo" />
         <div class="word">已完成</div>
       </div>
     </div>
     <!-- 全部订单 -->
-    <div class="allorders displayF align-itemsC" @click="checkLogin('/allorders')">
+    <div
+      class="allorders displayF align-itemsC"
+      @click="checkLogin('/completed', 0)"
+    >
       <van-icon name="records" class="photo1" />
       全部订单
       <van-icon name="arrow" class="photo2" />
     </div>
     <!-- 功能 -->
     <div class="functions">
-      <div class="funOne displayF align-itemsC" @click="checkLogin('/collection')">
+      <div
+        class="funOne displayF align-itemsC"
+        @click="checkLogin('/collection')"
+      >
         <van-icon name="star-o" class="photo1" />
         收藏商品
         <van-icon name="arrow" class="photo3" />
@@ -92,6 +105,11 @@
         最近浏览
         <van-icon name="arrow" class="photo3" />
       </div>
+      <div class="funOne displayF align-itemsC" @click="clearCache">
+        <van-icon name="delete-o" class="photo1" />
+        清除缓存
+        <van-icon name="arrow" class="photo3" />
+      </div>
     </div>
   </div>
 </template>
@@ -102,7 +120,9 @@ export default {
   name: "",
   props: {},
   data() {
-    return {};
+    return {
+      activeIndex: 0,
+    };
   },
   components: { Child },
   methods: {
@@ -122,19 +142,44 @@ export default {
           console.log("请求失败", err);
         });
     },
-    go(url){
-      if (url==='/allsite'){
-        localStorage.setItem('allSite',1)
+    go(url) {
+      if (url === "/allsite") {
+        localStorage.setItem("allSite", 1);
+        this.$router.push(url);
+      } else if (url === "/completed") {
+        this.$router.push({
+          path: "/completed",
+          query: {
+            index: this.activeIndex,
+          },
+        });
+      } else {
+        this.$router.push(url);
       }
-       this.$router.push(url)     
     },
-    checkLogin(item){
+    checkLogin(item, index) {
+      this.activeIndex = index;
       this.$utils.checkLogin({
-        key:'user',
-        next:this.go,
-        item:item
-      })
-    }
+        key: "user",
+        next: this.go,
+        item: item,
+      });
+    },
+    // 清除缓存
+    clearCache() {
+      this.$dialog
+        .confirm({
+          title: "清除缓存",
+          message: "您确定搜索历史和浏览历史吗",
+        })
+        .then(() => {
+          localStorage.removeItem(`${this.user.username}searchHistory`)
+          localStorage.removeItem(`${this.user.username}browseHistory`)
+        })
+        .catch(() => {
+          // on cancel
+        });
+    },
   },
   mounted() {},
   computed: {

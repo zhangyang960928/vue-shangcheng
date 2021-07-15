@@ -95,15 +95,20 @@ export default {
       .then((res) => {
         // console.log(res);
         this.list = res.goods.goodsOne;
-        if(this.user){
-          this.$utils.saveHistory({
-          key: `${this.user.username}browse`,
-          data: this.list,
-          attr: "id",
-        });
+        if (!res.goods.goodsOne) {
+          this.$router.push("/");
+          this.$toast("产品已下架");
+        } else {
+          if (this.user) {
+            this.$utils.saveHistory({
+              key: `${this.user.username}browse`,
+              data: this.list,
+              attr: "id",
+            });
+          }
+          this.images.push(this.list.image);
+          // console.log(this.list);
         }
-        this.images.push(this.list.image);
-        // console.log(this.list);
       })
       .catch((err) => {
         console.log("请求失败", err);

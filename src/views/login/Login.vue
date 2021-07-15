@@ -134,7 +134,7 @@ export default {
             this.$store.commit('changeUser',JSON.stringify(res.userInfo))
             this.$router.push("/");
           } else {
-            Notify({ type: "danger", message: "res.msg" });
+            this.$toast(res.msg);
           }
         })
         .catch((err) => {

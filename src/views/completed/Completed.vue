@@ -16,8 +16,51 @@
     </child>
     <!-- 中间 -->
     <div>
-      <van-tabs class="font">
-        <van-tab title="全部"></van-tab>
+      <van-tabs class="font" v-model="active">
+        <van-tab title="全部">
+          <div class="body">
+            <div class="word" v-for="(item, index) in list" :key="index">
+              <!-- 订单编号 -->
+              <div class="word1 displayF justify-contentB">
+                <div class="word1One">订单编号：{{ item.order_id }}</div>
+                <div class="word1Two">交易完成</div>
+              </div>
+              <!-- 订单详情 -->
+              <div
+                class="word2"
+                v-for="(item1, index1) in item.order_list"
+                :key="index1"
+              >
+                <div class="word2One displayF" @click="jump(item1)">
+                  <div class="photo">
+                    <img :src="item1.image_path" alt="" />
+                  </div>
+                  <div class="title displayF">
+                    <div class="title1">{{ item1.name }}</div>
+                    <div class="title2 displayF flex-directionC align-itemsE">
+                      <div class="title2One">
+                        ￥{{ Number(item1.mallPrice).toFixed(1) }}
+                      </div>
+                      <div class="title2Two">x{{ item1.count }}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 底部 -->
+              <div class="word3 displayF flex-directionC align-itemsE">
+                <div>创建时间：{{ item.add_time }}</div>
+                <div style="text-align: right">
+                  收货地址：{{ item.address }}
+                </div>
+                <div>
+                  共：{{ item.order_list.length }}件商品 合计：{{
+                    Number(item.mallPrice).toFixed(2)
+                  }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </van-tab>
         <van-tab title="待支付"></van-tab>
         <van-tab title="待发货"></van-tab>
         <van-tab title="待收货"></van-tab>
@@ -43,7 +86,9 @@
                   <div class="title displayF">
                     <div class="title1">{{ item1.name }}</div>
                     <div class="title2 displayF flex-directionC align-itemsE">
-                      <div class="title2One">￥{{ Number(item1.mallPrice).toFixed(1) }}</div>
+                      <div class="title2One">
+                        ￥{{ Number(item1.mallPrice).toFixed(1) }}
+                      </div>
                       <div class="title2Two">x{{ item1.count }}</div>
                     </div>
                   </div>
@@ -52,7 +97,7 @@
               <!-- 底部 -->
               <div class="word3 displayF flex-directionC align-itemsE">
                 <div>创建时间：{{ item.add_time }}</div>
-                <div>收货地址：{{ item.address }}</div>
+                <div style="text-align:right">收货地址：{{ item.address }}</div>
                 <div>
                   共：{{ item.order_list.length }}件商品 合计：{{
                     Number(item.mallPrice).toFixed(2)
@@ -73,7 +118,8 @@ export default {
   props: {},
   data() {
     return {
-      list:[],
+      list: [],
+      active: 0,
     };
   },
   components: {},
@@ -83,23 +129,27 @@ export default {
       this.$router.back();
     },
     // 跳转详情页
-    jump(item1){
+    jump(item1) {
       this.$router.push({
-        path:'/details',
-        query:{
-          id:item1.cid
-        }
-      })
-    }
+        path: "/details",
+        query: {
+          id: item1.cid,
+        },
+      });
+    },
   },
   mounted() {
     // 获取所有订单
-    this.$api.getMyOrder().then(res=>{
-      console.log(res.list);
-      this.list=res.list
-    }).catch(err=>{
-      console.log('请求失败',err);
-    })
+    this.$api
+      .getMyOrder()
+      .then((res) => {
+        console.log(res.list);
+        this.list = res.list;
+      })
+      .catch((err) => {
+        console.log("请求失败", err);
+      });
+    this.active = Number(this.$route.query.index);
   },
   computed: {},
   watch: {},

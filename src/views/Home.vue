@@ -1,73 +1,85 @@
 <template>
-  <div class="home">
-    <div class="homeone displayF">
-      <div class="left displayF justify-contentC align-itemsC" @click="map">
-        {{ citys ? citys : "定位中" }}
-        <van-icon name="arrow-down" />
-      </div>
-      <div class="right displayF align-itemsC">
-        <van-search
-          show-action
-          v-model="value"
-          placeholder="请输入搜索关键词"
-          @focus="focus"
-        >
-          <template #action>
-            <div v-if="show" @click="cancel" style="font-size: 16px">取消</div>
-          </template>
-        </van-search>
-      </div>
+  <div>
+    <div v-if="isLoading">
+      <loading></loading>
     </div>
-    <div v-if="flag">
-      <hometwo v-if="list" :list="list"></hometwo>
-      <homethree v-if="list1" :list1="list1"></homethree>
-      <div class="homefixed displayF justify-contentC align-itemsC">
-        <img :src="arr.PICTURE_ADDRESS" alt="" />
-      </div>
-      <homefour v-if="list2" :list2="list2"></homefour>
-      <homefive v-if="list3" :list3="list3" :arr1="arr1">
-        <template #floor>
-          <div class="floor displayF justify-contentC align-itemsC">1F</div>
-        </template>
-      </homefive>
-      <homefive v-if="list3" :list3="list4" :arr1="arr2">
-        <template #floor>
-          <div class="floor displayF justify-contentC align-itemsC">2F</div>
-        </template>
-      </homefive>
-      <homefive v-if="list3" :list3="list5" :arr1="arr3">
-        <template #floor>
-          <div class="floor displayF justify-contentC align-itemsC">3F</div>
-        </template>
-      </homefive>
-      <homesix v-if="list6" :list6="list6"></homesix>
-    </div>
-    <div v-else>
-      <div v-if="value">
-        <div
-          class="search displayF align-itemsC"
-          v-for="(item, index) in listone"
-          :key="index"
-          @click="saveSearch(item.id)"
-        >
-          <img :src="item.image" alt="" />
-          <div v-html="item.name" class="searchWord"></div>
+    <div v-else class="home">
+      <div class="homeone displayF">
+        <div class="left displayF justify-contentC align-itemsC" @click="map">
+          {{ citys ? citys : "定位中" }}
+          <van-icon name="arrow-down" />
         </div>
+        <div class="right displayF align-itemsC">
+          <van-search
+            show-action
+            v-model="value"
+            placeholder="请输入搜索关键词"
+            @focus="focus"
+          >
+            <template #action>
+              <div v-if="show" @click="cancel" style="font-size: 16px">
+                取消
+              </div>
+            </template>
+          </van-search>
+        </div>
+      </div>
+      <div v-if="flag">
+        <hometwo v-if="list" :list="list"></hometwo>
+        <homethree v-if="list1" :list1="list1"></homethree>
+        <div class="homefixed displayF justify-contentC align-itemsC">
+          <img :src="arr.PICTURE_ADDRESS" alt="" />
+        </div>
+        <homefour v-if="list2" :list2="list2"></homefour>
+        <homefive v-if="list3" :list3="list3" :arr1="arr1">
+          <template #floor>
+            <div class="floor displayF justify-contentC align-itemsC">1F</div>
+          </template>
+        </homefive>
+        <homefive v-if="list3" :list3="list4" :arr1="arr2">
+          <template #floor>
+            <div class="floor displayF justify-contentC align-itemsC">2F</div>
+          </template>
+        </homefive>
+        <homefive v-if="list3" :list3="list5" :arr1="arr3">
+          <template #floor>
+            <div class="floor displayF justify-contentC align-itemsC">3F</div>
+          </template>
+        </homefive>
+        <homesix v-if="list6" :list6="list6"></homesix>
       </div>
       <div v-else>
-        <div class="cancel displayF justify-contentE">
-          <div class="cancel1" @click="cancel1">
-            <van-icon name="delete-o" />
+        <div v-if="value">
+          <div
+            class="search displayF align-itemsC"
+            v-for="(item, index) in listone"
+            :key="index"
+            @click="saveSearch(item.id)"
+          >
+            <img :src="item.image" alt="" />
+            <div v-html="item.name" class="searchWord"></div>
           </div>
         </div>
-        <div class="exhibition displayF">
-          <div class="entry" v-for="(item, index) in searchlist" :key="index">
-            {{ item.name }}
+        <div v-else>
+          <div class="cancel displayF justify-contentE">
+            <div class="cancel1" @click="cancel1">
+              <van-icon name="delete-o" />
+            </div>
+          </div>
+          <div class="exhibition displayF">
+            <div
+              class="entry"
+              v-for="(item, index) in searchlist"
+              :key="index"
+              @click="assignment(item)"
+            >
+              {{ item.name }}
+            </div>
           </div>
         </div>
       </div>
+      <div class="foot"></div>
     </div>
-    <div class="foot"></div>
   </div>
 </template>
 
@@ -82,6 +94,7 @@ export default {
   props: {},
   data() {
     return {
+      isLoading: true,
       list: null,
       list1: null,
       arr: "",
@@ -175,6 +188,10 @@ export default {
         this.searchlist = [];
       }
     },
+    // 点击历史记录
+    assignment(item) {
+      this.value = item.name;
+    },
   },
   mounted() {
     // console.log(this.user);
@@ -185,22 +202,25 @@ export default {
       .recommend()
       .then((res) => {
         // console.log(res);
-        this.list = res.data.slides;
-        this.list1 = res.data.category;
-        this.arr = res.data.advertesPicture;
-        this.list2 = res.data.recommend;
+        if (res.code === 200) {
+          this.isLoading=false
+          this.list = res.data.slides;
+          this.list1 = res.data.category;
+          this.arr = res.data.advertesPicture;
+          this.list2 = res.data.recommend;
 
-        this.arr1 = res.data.floorName.floor1;
-        this.list3 = res.data.floor1;
+          this.arr1 = res.data.floorName.floor1;
+          this.list3 = res.data.floor1;
 
-        this.arr2 = res.data.floorName.floor2;
-        this.list4 = res.data.floor2;
+          this.arr2 = res.data.floorName.floor2;
+          this.list4 = res.data.floor2;
 
-        this.arr3 = res.data.floorName.floor3;
-        this.list5 = res.data.floor3;
+          this.arr3 = res.data.floorName.floor3;
+          this.list5 = res.data.floor3;
 
-        this.list6 = res.data.hotGoods;
-        // console.log(this.list);
+          this.list6 = res.data.hotGoods;
+          // console.log(this.list);
+        }
       })
       .catch((err) => {
         console.log("请求失败", err);
@@ -248,6 +268,7 @@ export default {
 .home {
   background: #f2f2f2;
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 .homefixed {

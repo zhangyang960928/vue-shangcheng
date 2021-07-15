@@ -82,6 +82,7 @@ export default {
   border-top: 1px solid #eeeeee;
   .photo {
     margin-top: 10px;
+    font-size: 0;
   }
 }
 .word {

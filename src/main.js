@@ -7,10 +7,12 @@ import 'vant/lib/index.css';
 import api from './http/api'
 import child from '../src/components/child/Child.vue'
 import utils from './utils'
+import loading from './components/loading/Loading.vue'
 
 // 把api挂载成全局变量
 Vue.prototype.$api = api
 Vue.prototype.$utils = utils
+Vue.component('loading',loading)
 Vue.use(Vant);
 Vue.config.productionTip = false
 Vue.component('child',child)

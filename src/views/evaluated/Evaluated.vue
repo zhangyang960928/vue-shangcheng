@@ -26,7 +26,7 @@
           <div class="namer">
             <div v-if="list.anonymous===false"><div class="namerOne">{{ user.nickname }}</div></div>
             <div v-else><div class="namerOne">匿名人士</div></div>
-            <div><van-rate v-model="list.rate" /></div>
+            <div><van-rate v-model="list.rate" readonly /></div>
           </div>
           <div>{{ list.comment_time }}</div>
         </div>

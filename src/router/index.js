@@ -47,12 +47,6 @@ const routes = [
     name: 'Changeadd',
     component: () => import('../views/changeadd/Changeadd.vue')
   },
-  // 全部订单
-  {
-    path: '/allorders',
-    name: 'Allorders',
-    component: () => import('../views/allorders/Allorders.vue')
-  },
   // 已完成
   {
     path: '/completed',
@@ -129,4 +123,30 @@ const router = new VueRouter({
   routes
 })
 
+
+
+router.beforeEach((to, from, next) => {
+  switch (to.path) {
+    case '/settlement':
+    case '/allsite':
+    case '/compile':
+    case '/changeadd':
+    case '/completed':
+    case '/collection':
+    case '/mycomments':
+    case '/comment':
+    case '/evaluated':
+    case '/profile':
+    case '/browse':
+      let user = localStorage.getItem('user')
+      if (!user) {
+        next('/login')
+      }else{
+        next()
+      }
+      break
+      default:next()
+      break
+  }
+})
 export default router
